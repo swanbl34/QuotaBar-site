@@ -2,7 +2,7 @@ export const APP_VERSION = "0.1.1";
 export const APP_NAME = "QuotaBar";
 export const BUNDLE_ID = "com.quotabar.app";
 export const MACOS_MIN = "macOS 13+";
-export const DOWNLOAD_URL = "https://github.com/swanbl34/QuotoBar-app/releases/download/v0.1.1/QuotaBar.dmg";
+export const DOWNLOAD_URL = "https://github.com/swanbl34/QuotaBar-releases/releases/download/v0.1.1/QuotaBar-0.1.1-macOS.dmg";
 export const GITHUB_URL = "https://github.com/swanbl34/QuotoBar-app";
 
 export const FEATURES = [
