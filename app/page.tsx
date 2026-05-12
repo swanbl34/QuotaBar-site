@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import Features from "@/components/sections/Features";
 import ScrollStats from "@/components/sections/ScrollStats";
 import HowItWorks from "@/components/sections/HowItWorks";
+import NotificationShowcase from "@/components/sections/NotificationShowcase";
 import Demo from "@/components/sections/Demo";
 import DownloadCTA from "@/components/sections/DownloadCTA";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Features />
       <ScrollStats />
       <HowItWorks />
+      <NotificationShowcase />
       <Demo />
       <DownloadCTA />
       <Footer />
