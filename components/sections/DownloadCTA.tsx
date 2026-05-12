@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download } from "lucide-react";
+import { Download, ShieldAlert } from "lucide-react";
 import Button from "@/components/ui/Button";
 import { DOWNLOAD_URL, GITHUB_URL, APP_VERSION, MACOS_MIN } from "@/lib/constants";
 
@@ -93,16 +93,34 @@ export default function DownloadCTA() {
           </Button>
         </motion.div>
 
+        {/* Gatekeeper callout */}
+        <motion.div
+          variants={fadeUp}
+          className="mt-8 mx-auto max-w-md rounded-xl px-4 py-3 flex items-start gap-3 text-left"
+          style={{
+            background: "rgba(249,115,22,0.07)",
+            border: "1px solid rgba(249,115,22,0.2)",
+          }}
+        >
+          <ShieldAlert size={15} className="flex-shrink-0 mt-0.5" style={{ color: "#F97316" }} />
+          <div>
+            <p className="text-xs font-semibold mb-0.5" style={{ color: "#F97316" }}>
+              macOS may block the app on first launch
+            </p>
+            <p className="text-xs leading-relaxed" style={{ color: "var(--color-text-secondary)" }}>
+              Right-click <span className="font-medium text-[var(--color-text-primary)]">QuotaBar.app</span> → <span className="font-medium text-[var(--color-text-primary)]">Open</span>, then confirm.
+              Or go to <span className="font-medium text-[var(--color-text-primary)]">System Settings → Privacy & Security → Open Anyway</span>.
+            </p>
+          </div>
+        </motion.div>
+
         {/* Fine print */}
         <motion.p
           variants={fadeUp}
-          className="mt-6 text-xs font-[var(--font-mono)]"
+          className="mt-5 text-xs font-[var(--font-mono)]"
           style={{ color: "var(--color-text-tertiary)" }}
         >
-          v{APP_VERSION} · macOS 13 Ventura or later required ·{" "}
-          <span className="opacity-70">
-            If blocked by Gatekeeper, right-click the app and choose Open.
-          </span>
+          v{APP_VERSION} · macOS 13 Ventura or later required
         </motion.p>
       </motion.div>
     </section>
