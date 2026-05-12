@@ -9,7 +9,7 @@ import DownloadCTA from "@/components/sections/DownloadCTA";
 
 export default function Home() {
   return (
-    <main className="relative overflow-x-hidden">
+    <main className="relative" style={{ overflowX: "clip" }}>
       <Navbar />
       <Hero />
       <Features />
