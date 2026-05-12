@@ -83,7 +83,7 @@ export default function DownloadCTA() {
 
         {/* CTA */}
         <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button href={DOWNLOAD_URL} download variant="primary" size="lg">
+          <Button href={DOWNLOAD_URL} variant="primary" size="lg">
             <Download size={16} />
             Download QuotaBar
           </Button>

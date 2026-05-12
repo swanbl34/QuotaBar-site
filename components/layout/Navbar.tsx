@@ -49,7 +49,7 @@ export default function Navbar() {
           </div>
 
           {/* CTA */}
-          <Button href={DOWNLOAD_URL} download variant="primary" size="sm">
+          <Button href={DOWNLOAD_URL} variant="primary" size="sm">
             <Download size={13} />
             Download Free
           </Button>

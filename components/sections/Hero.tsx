@@ -85,7 +85,7 @@ export default function Hero() {
 
         {/* CTA row */}
         <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center gap-4 mb-16">
-          <Button href={DOWNLOAD_URL} download variant="primary" size="lg">
+          <Button href={DOWNLOAD_URL} variant="primary" size="lg">
             <Download size={16} />
             Download for macOS
           </Button>
