@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const STAGES = [
   {
-    percent: 12,
+    percent: 88,
     status: "healthy" as const,
     statusLabel: "Healthy",
     color: "#22C55E",
@@ -15,7 +15,7 @@ const STAGES = [
     subtitle: "Quota just reset. Full capacity, green light.",
   },
   {
-    percent: 48,
+    percent: 52,
     status: "healthy" as const,
     statusLabel: "Healthy",
     color: "#22C55E",
@@ -24,7 +24,7 @@ const STAGES = [
     subtitle: "Half-way through. Still in the green — no surprises.",
   },
   {
-    percent: 74,
+    percent: 26,
     status: "warning" as const,
     statusLabel: "Warning",
     color: "#F97316",
@@ -33,7 +33,7 @@ const STAGES = [
     subtitle: "QuotaBar turns orange. Time to keep an eye on it.",
   },
   {
-    percent: 93,
+    percent: 7,
     status: "critical" as const,
     statusLabel: "Critical",
     color: "#EF4444",
@@ -43,7 +43,7 @@ const STAGES = [
   },
   {
     percent: 100,
-    status: "critical" as const,
+    status: "healthy" as const,
     statusLabel: "Reset",
     color: "#22C55E",
     bg: "rgba(34,197,94,0.1)",
@@ -192,7 +192,7 @@ export default function ScrollStats() {
                   {stage.percent}%
                 </motion.span>
                 <span className="text-xs text-[var(--color-text-tertiary)] mt-1">
-                  used
+                  left
                 </span>
               </div>
             </div>
